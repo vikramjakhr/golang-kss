@@ -58,4 +58,19 @@ func main() {
 	var me MyType = MyType("Aaaalee")
 
 	fmt.Println(me)
+
+	// map
+	var m1 map[string]string
+	m1 = make(map[string]string)
+	m1["firstName"] = "vikram"
+	m1["lastName"] = "jakhar"
+
+	fmt.Println(m1["firstName"], m1["lastName"])
+
+	m2 := map[string]string{"firstName":"vikram"}
+	fmt.Println(m2)
+
+	// interface type
+	var ifType interface{} = "blahblah"
+	fmt.Println(ifType)
 }
